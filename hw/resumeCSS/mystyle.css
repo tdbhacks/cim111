@@ -1,0 +1,41 @@
+a{
+  color: #003399;
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+h1{
+  font-family: 'Lora', serif;
+}
+
+.header_margin{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.city{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#university{
+  color: orange;
+}
+
+#miami{
+  color: green;
+}
+
+#course{
+  font-family: 'Lora', serif;
+}
+
+#semester{
+  font-family: 'Lora', serif;
+}
+
+#instagram{
+  font-family: 'Lora', serif;
+}
