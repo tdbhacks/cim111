@@ -11,6 +11,10 @@ h1{
   font-family: 'Lora', serif;
 }
 
+address{
+  color: #7d7d7d;
+}
+
 .header_margin{
   margin-bottom: 0;
   padding-bottom: 0;
