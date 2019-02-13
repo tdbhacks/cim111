@@ -12,10 +12,18 @@ a:hover{
 
 h1{
   font-family: 'Lora', serif;
+  text-align: center;
+}
+
+img{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 address{
   color: #7d7d7d;
+  text-align: center;
 }
 
 .header_margin{
@@ -45,4 +53,8 @@ address{
 
 #instagram{
   font-family: 'Lora', serif;
+}
+
+#linkedin{
+  text-align: center;
 }
