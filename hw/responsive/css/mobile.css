@@ -1,4 +1,12 @@
-@@import "desktop.css";
+@import "desktop.css";
+
+header{
+  height: auto;
+}
+
+nav ul li{
+  margin-bottom: 5px;
+}
 
 #grid1{
   display: block;
@@ -14,8 +22,4 @@
 
 #grid4{
 display: block;
-}
-
-#grid5{
-  display: block;
 }

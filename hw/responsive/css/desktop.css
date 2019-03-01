@@ -1,5 +1,12 @@
 header{
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
 
+h2{
+  margin-bottom: 5px;
 }
 
 nav{
@@ -7,58 +14,74 @@ nav{
 }
 
 nav ul{
-
+  margin-left: -20px;
 }
 
 nav ul li{
   list-style: none;
   display: inline-block;
+  margin-right: 20px;
 }
 
 nav ul li a{
+  text-decoration: none;
+  color: #003366;
+}
 
+nav ul li a:hover{
+  color: blue;
 }
 
 main{
-
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
 footer{
-
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-#sect1{
-
-}
-
-#sect2{
-
-}
-
-#sect3{
-
-}
-
-#sect4{
-
+section{
+  text-align: center;
 }
 
 #grid1{
   display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 10px;
 }
 
 #grid2{
   display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 }
 
 #grid3{
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 }
 
 #grid4{
   display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
 }
 
-#grid5{
-  display: grid;
+#instagram{
+  color: #f46f30;
+}
+
+.gallery{
+  width: 80%;
+  margin: 0, auto;
 }
