@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 header{
   width: 90%;
   height: 100px;
   text-align: center;
   margin: 0 auto;
 }
+h1{
+  font-family: 'PT Sans', sans-serif;
+}
 
 h2{
+  font-family: 'PT Sans', sans-serif;
   margin-bottom: 5px;
+  font-size: 30px;
 }
 
 nav{
@@ -47,7 +54,6 @@ footer{
 
 section{
   text-align: center;
-  
 }
 
 #grid1{
@@ -84,7 +90,7 @@ section{
 }
 
 #profile{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 

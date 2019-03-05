@@ -1,0 +1,13 @@
+@import "desktop.css";
+
+#grid1{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+#profile{
+  width: 90%;
+  margin: 0 auto;
+}

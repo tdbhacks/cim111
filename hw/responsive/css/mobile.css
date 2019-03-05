@@ -8,6 +8,18 @@ main{
   width: 90%;
 }
 
+h1{
+    font-size: 30px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+section{
+  margin-bottom: 5px;
+}
+
 nav ul li{
   margin-bottom: 5px;
   display: block;
