@@ -6,11 +6,11 @@
     <meta name="description" content="Intro to Web Design - hw3">
     <meta name="keywords" content="responsive, html">
     <link rel="stylesheet" type="text/css" href="css/desktop.css"
-      media="only screen and (min-width: 720px)">
+      media="only screen and (min-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/tablet.css"
-      media="only screen and (min-width: 480px) and (max-width: 720px)">
+      media="only screen and (min-width: 640px) and (max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/mobile.css"
-      media="only screen and (max-width: 480px)">
+      media="only screen and (max-width: 640px)">
     <title>Resposive Website</title>
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -19,9 +19,9 @@
       <h1 id="top">Drone Photography</h1>
       <nav>
         <ul>
-          <li><a href="#sect1">About me</a></li>
+          <li><a href="#sect1">Gallery</a></li>
           <li><a href="#sect2">My drone</a></li>
-          <li><a href="#sect3">Gallery</a></li>
+          <li><a href="#sect3">About me</a></li>
           <li><a href="#sect4">Miscellaneous</a></li>
         </ul>
       </nav>
@@ -29,24 +29,12 @@
 
     <main>
       <section id="sect1">
-        <h2>About me</h2>
-        <div id="grid1">
-          <section>
-            <img src="images/profile.jpg" id="profile" alt="photographer">
-          </section>
-          <section>
-            I am a Computer Science major with a passion for drone photography.
-            I got into photography during my freshman year, while taking an
-            Introduction to Digital Filmmaking class.
-            <br><br>
-            Since then, I have taken several online classes as well as classes
-            at the University of Miami, in order to improve my skills!
-            <br><br>
-            Everything I shoot is exported as DJI's native RAW format (.dmg),
-            lightly edited on Adobe Photoshop CC to remove minor imperfections,
-            and finally color graded on Adobe Lightroom CC using several
-            different presets and manual adjustments.
-          </section>
+        <h2>Gallery</h2>
+        <div id="grid3">
+          <img src="images/photo1.jpg" class="gallery" alt="drone shot 1">
+          <img src="images/photo2.jpg" class="gallery" alt="drone shot 2">
+          <img src="images/photo3.jpg" class="gallery" alt="drone shot 3">
+          <img src="images/photo4.jpg" class="gallery" alt="drone shot 4">
         </div>
       </section>
       <section id="sect2">
@@ -80,12 +68,24 @@
         </div>
       </section>
       <section id="sect3">
-        <h2>Gallery</h2>
-        <div id="grid3">
-          <img src="images/photo1.jpg" class="gallery" alt="drone shot 1">
-          <img src="images/photo2.jpg" class="gallery" alt="drone shot 2">
-          <img src="images/photo3.jpg" class="gallery" alt="drone shot 3">
-          <img src="images/photo4.jpg" class="gallery" alt="drone shot 4">
+        <h2>About me</h2>
+        <div id="grid1">
+          <section>
+            <img src="images/profile.jpg" id="profile" alt="photographer">
+          </section>
+          <section>
+            I am a Computer Science major with a passion for drone photography.
+            I got into photography during my freshman year, while taking an
+            Introduction to Digital Filmmaking class.
+            <br><br>
+            Since then, I have taken several online classes as well as classes
+            at the University of Miami, in order to improve my skills!
+            <br><br>
+            Everything I shoot is exported as DJI's native RAW format (.dmg),
+            lightly edited on Adobe Photoshop CC to remove minor imperfections,
+            and finally color graded on Adobe Lightroom CC using several
+            different presets and manual adjustments.
+          </section>
         </div>
       </section>
       <section id="sect4">
