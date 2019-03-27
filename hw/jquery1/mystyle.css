@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+a{
+  color: #003399;
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+h1{
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+img{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.header_margin{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
