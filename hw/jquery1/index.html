@@ -11,35 +11,85 @@
   </head>
   <body>
     <header>
-      <h1>How to make an origami butterfly</h1>
-      <img src="./images/object.jpg" alt="object" style="width:25%">
+      <h1>How to make an origami dog</h1>
+      <p id="show_spoiler"><i>*spoiler*</i> Click here to see the end result <i>*spoiler*</i></p>
+      <img id="spoiler" src="./images/spoiler.jpg" alt="spoiler" style="width:50%">
     </header>
     <section>
       <h2>Step 1</h2>
-
+        <p>Take a sheet of paper</p>
+        <img src="./images/step1.jpg" alt="step1" style="width:50%">
+    </section>
+    <section>
+      <h2>Step 2</h2>
+        <p>Cut it to get a square</p>
+        <img src="./images/step2.jpg" alt="step2" style="width:50%">
     </section>
     <section>
       <h2>Step 3</h2>
-
+        <p>Follow this tutorial to fold it properly</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wWVppdfYOx8"
+          frameborder="0" allow="encrypted-media;" allowfullscreen></iframe>
     </section>
     <section>
       <h2>Step 4</h2>
-
+        <p>Draw the eyes and nose</p>
+        <img src="./images/step4.jpg" alt="step4" style="width:50%">
     </section>
     <section>
       <h2>Step 5</h2>
-
+        <p>Take a new sheet and do another one!</p>
+        <img src="./images/step5.jpg" alt="step5" style="width:50%">
     </section>
     <section>
-      <h2>Link to video tutorial</h2>
-
+      <h3>Check out the before and after by hovering over the image</h3>
+      <div id="mouseOver">
+        <img id="before" src="./images/before.jpg" alt="before" style="width:50%">
+        <img id="after" src="./images/after.jpg" alt="after" style="width:50%">
+      </div>
     </section>
     <br>
     <footer>
-      <p>Created by Alessio Buraggina - Tutorial by *add youtube channel*</p>
-      <aside>
-	      <a href="https://www.instagram.com/tdbhacks">Instagram</a>
-      </aside>
+      <p>Created by
+        <a id="link" href="https://www.instagram.com/tdbhacks">Alessio Buraggina</a>
+        <br> - <br>
+        Tutorial by <a href="https://www.youtube.com/channel/UCJME_um5k3Xr47bt4UGRGBg">Craft TV - Origami</a>
+        <br> - <br>
+        Background by Pink Sherbet Photography from USA <br>
+        CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=37312310
+      </p>
     </footer>
+
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      //Jquery code
+      $("#spoiler").hide();
+      $("#after").hide();
+
+      $("#link").mouseenter(function(){
+        $("#link").css("color", "#dd2a7b");
+      });
+
+      $("#show_spoiler").click(function(){
+        $("#spoiler").show(1000);
+      });// end of click1
+
+      //before and after
+      $("#mouseOver").mouseenter(function(){
+        $("#before").hide();
+        $("#after").show();
+        //$("#before").html("img src='./images/spoiler.jpg' alt='after' style='width:25%'")
+      });
+      $("#mouseOver").mouseleave(function(){
+        $("#after").hide();
+        $("#before").show();
+        //$("#before").html("img src='./images/spoiler.jpg' alt='after' style='width:25%'")
+      });
+
+      //End of jquery code
+      });
+    </script>
+
   </body>
 </html>
