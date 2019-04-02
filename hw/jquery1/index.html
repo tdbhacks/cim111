@@ -13,7 +13,7 @@
     <header>
       <h1>How to make an origami dog</h1>
       <p id="show_spoiler"><i>*spoiler*</i> Click here to see the end result <i>*spoiler*</i></p>
-      <img id="spoiler" src="./images/spoiler.jpg" alt="spoiler" style="width:50%">
+      <img id="spoiler" src="./images/step4.jpg" alt="spoiler" style="width:50%">
     </header>
     <section>
       <h2>Step 1</h2>
@@ -39,21 +39,21 @@
     <section>
       <h2>Step 5</h2>
         <p>Take a new sheet and do another one!</p>
-        <img src="./images/step5.jpg" alt="step5" style="width:50%">
+        <!-- <img src="./images/step5.jpg" alt="step5" style="width:50%"> -->
     </section>
     <section>
       <h3>Check out the before and after by hovering over the image</h3>
       <div id="mouseOver">
-        <img id="before" src="./images/before.jpg" alt="before" style="width:50%">
-        <img id="after" src="./images/after.jpg" alt="after" style="width:50%">
+        <img id="before" src="./images/step1.jpg" alt="before" width="100%">
+        <img id="after" src="./images/step4.jpg" alt="after" width="100%">
       </div>
     </section>
     <br>
     <footer>
       <p>Created by
-        <a id="link" href="https://www.instagram.com/tdbhacks">Alessio Buraggina</a>
+        <a id="InstaLink" href="https://www.instagram.com/tdbhacks">Alessio Buraggina</a>
         <br> - <br>
-        Tutorial by <a href="https://www.youtube.com/channel/UCJME_um5k3Xr47bt4UGRGBg">Craft TV - Origami</a>
+        Tutorial by <a id="YTLink" href="https://www.youtube.com/channel/UCJME_um5k3Xr47bt4UGRGBg">Craft TV - Origami</a>
         <br> - <br>
         Background by Pink Sherbet Photography from USA <br>
         CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=37312310
@@ -67,12 +67,16 @@
       $("#spoiler").hide();
       $("#after").hide();
 
-      $("#link").mouseenter(function(){
-        $("#link").css("color", "#dd2a7b");
+      $("#InstaLink").mouseenter(function(){
+        $("#InstaLink").css("color", "#dd2a7b");
+      });
+
+      $("#YTLink").mouseenter(function(){
+        $("#YTLink").css("color", "red");
       });
 
       $("#show_spoiler").click(function(){
-        $("#spoiler").show(1000);
+        $("#spoiler").toggle(1000);
       });// end of click1
 
       //before and after

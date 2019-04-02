@@ -27,3 +27,13 @@ img{
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+#mouseOver{
+  width: 40%;
+  margin: 0 auto;
+}
+
+#show_spoiler{
+  margin: 0 auto;
+  width: 33%;
+}
