@@ -2,6 +2,8 @@
 
 body{
   text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 a{
@@ -29,4 +31,8 @@ img{
 .header_margin{
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.page2{
+  display: inline-block;
 }

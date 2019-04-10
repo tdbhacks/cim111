@@ -9,31 +9,53 @@
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="css/tiltedpage-scroll.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/tiltedpage-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
     <title>JQuery2 hw</title>
   </head>
   <body>
     <header>
-      <h1>Rome - The Eternal City</h1>
-
+      <h1>Trieste - A Hidden Gem in Italy</h1>
     </header>
-    <section>
-      <h2>About</h2>
-
-    </section>
-    <section>
-      <h2>Gallery</h2>
-        <img src="./images/rome1.jpg" alt="rome1" style="width:50%">
-
-    </section>
-    <section>
-      <h2>Attractions</h2>
-
-    </section>
-    <section>
-      <h2>Car vs Metro vs Bus vs Walking</h2>
-
-    </section>
+    <div class="main">
+      <section class="page1">
+        <h2>About</h2>
+        <p>
+          Tumbling down to the Adriatic from a wild, karstic plateau and almost
+          entirely surrounded by Slovenia, the city is physically isolated from
+          the rest of the Italian peninsula. From as long ago as the 1300s,
+          Trieste has indeed faced east, later becoming a free port under
+          Austrian rule. The city blossomed under the 18th- and 19th-century
+          Habsburgs; Vienna's seaside salon was also a fluid borderland where
+          Italian, Slavic, Jewish, Germanic and even Greek culture intermingled.
+          <br>
+          Devotees come to think of its glistening belle époque cafes, dark
+          congenial bars and buffets and even its maddening bora wind as their
+          own; it’s also a great base for striking out into the surrounding
+          Carso and Collio wine country.
+        </p>
+        <img src="./images/trieste1.jpg" alt="trieste1" style="width:50%">
+      </section>
+      <section class="page2">
+        <h2>Gallery</h2>
+          <img src="./images/trieste2.jpg" alt="trieste2" style="width:40%">
+          <img src="./images/trieste3.png" alt="trieste3" style="width:40%">
+          <img src="./images/trieste5.jpg" alt="trieste5" style="width:70%">
+      </section>
+      <section class="page3">
+        <h2>Attractions</h2>
+        <ul>
+          <li>Castello di Miramare</li>
+          <li>Osteria Salvagente</li>
+          <li>Caffè San Marco</li>
+          <li>Borgo Teresiano</li>
+          <li>Piazza dell'Unità d'Italia</li>
+        </ul>
+        <img src="./images/trieste4.png" alt="trieste4" style="width:50%">
+      </section>
+      <section class="last-page">
+        <h2>Car vs Metro vs Bus vs Walking</h2>
+      </section>
+    </div>
     <footer>
       <p>Created by
         <a id="InstaLink" href="https://www.instagram.com/tdbhacks">Alessio Buraggina</a>
@@ -43,7 +65,13 @@
     <script type="text/javascript">
     $(document).ready(function(){
       //Jquery code
-
+      $(".main").tiltedpage_scroll({
+        sectionContainer: "> section",
+        angle: 50,
+        opacity: true,
+        scale: true,
+        outAnimation: true
+      });
       //End of jquery code
       });
     </script>
