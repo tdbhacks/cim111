@@ -6,6 +6,10 @@ body{
   width: 80%;
 }
 
+footer{
+  margin-top: 15px;
+}
+
 a{
   color: #003399;
   text-decoration: none;
@@ -28,11 +32,23 @@ img{
   margin: 0 auto;
 }
 
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  font-size: 20px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
+ol li{
+  font-size: 20px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
 .header_margin{
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.page2{
-  display: inline-block;
 }
