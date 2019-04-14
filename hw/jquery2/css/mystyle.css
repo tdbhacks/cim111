@@ -19,10 +19,12 @@ a{
 
 h1{
   font-family: 'Lora', serif;
+  font-size: 35px;
 }
 
 h2{
   font-family: 'Lora', serif;
+  font-size: 30px;
 }
 
 p{
@@ -39,14 +41,14 @@ header ul{
 }
 
 ul li{
-  font-size: 20px;
+  font-size: 25px;
   margin-left: -40px;
   margin-bottom: 5px;
   list-style-position: inside;
 }
 
 ol li{
-  font-size: 20px;
+  font-size: 25px;
   margin-left: -40px;
   margin-bottom: 5px;
   list-style-position: inside;
