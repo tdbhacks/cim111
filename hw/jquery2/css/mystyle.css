@@ -44,6 +44,14 @@ ul li{
   margin-bottom: 5px;
 }
 
+ul{
+  list-style-position: inside;
+}
+
+ol{
+  list-style-position: inside;
+}
+
 .caption{
   font-size: 15px;
 }
