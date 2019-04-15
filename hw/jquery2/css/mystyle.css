@@ -4,7 +4,6 @@ body{
   text-align: center;
   margin: 0 auto;
   width: 80%;
-  background-image: url("images/background.jpg");
 }
 
 footer{
@@ -38,6 +37,10 @@ img{
 
 header ul{
   list-style-type: none;
+}
+
+header ul li{
+  font-size: 20px;
 }
 
 ul li{
