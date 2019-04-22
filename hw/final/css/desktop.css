@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body{
+  background-color: #070D0B;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  /* color: #D4AF37; */
+  color: white;
+}
+
+a:hover{
+  color: #FABC02;
+}
+
+header{
+  width: 90%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+h1{
+  font-family: 'Dancing Script', serif;
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'Dancing Script', serif;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+nav{
+  margin: 0 auto;
+}
+
+nav ul{
+  margin-left: -20px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  /* color: #003366; */
+  font-size: 20px;
+}
+
+main{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+section{
+  text-align: center;
+}
+
+#grid1{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 10px;
+}
+
+#grid2{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+#grid3{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+#grid4{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+#instagram{
+  color: #00755E;
+}
+
+#counter{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.gallery{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}

@@ -1,0 +1,43 @@
+@import "desktop.css";
+
+header{
+  height: auto;
+}
+
+main{
+  width: 90%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+section{
+  margin-bottom: 5px;
+}
+
+nav ul li{
+  margin-bottom: 5px;
+  display: block;
+}
+
+#grid1{
+  display: block;
+}
+
+#grid2{
+  display: block;
+}
+
+#grid3{
+  display: block;
+  margin-bottom: 15px;
+}
+
+#grid4{
+display: block;
+}
