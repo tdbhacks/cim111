@@ -11,6 +11,7 @@
       media="only screen and (min-width: 640px) and (max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/mobile.css"
       media="only screen and (max-width: 640px)">
+    <script src="js/jquery.js"></script>
     <title>Final Website</title>
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -31,24 +32,11 @@
     <main>
       <section id="sect3">
         <h2>Guestbook</h2>
-        <div id="grid1">
-          <section>
-            <img src="images/profile.jpg" id="profile" alt="photographer">
-          </section>
-          <section>
-            I am a Computer Science major with a passion for drone photography.
-            I got into photography during my freshman year, while taking an
-            Introduction to Digital Filmmaking class.
-            <br><br>
-            Since then, I have taken several online classes as well as classes
-            at the University of Miami, in order to improve my skills!
-            <br><br>
-            Everything I shoot is exported as DJI's native RAW format (.dmg),
-            lightly edited on Adobe Photoshop CC to remove minor imperfections,
-            and finally color graded on Adobe Lightroom CC using several
-            different presets and manual adjustments.
-          </section>
-        </div>
+        <!-- <div id="grid1"> -->
+        <!-- Bravenet Embedded Service Code -->
+        <script src="http://apps.bravenet.com/go.js?service=guestbook;id=1;usernum=3731968311"
+          type="text/javascript" charset="utf-8"></script>
+        <!-- </div> -->
       </section>
     </main>
 
@@ -57,5 +45,16 @@
       <br>
       <a href="#top">Back to top</a>
     </footer>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42872691-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-42872691-2');
+    </script>
+
   </body>
 </html>

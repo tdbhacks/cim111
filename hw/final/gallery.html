@@ -11,6 +11,12 @@
       media="only screen and (min-width: 640px) and (max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/mobile.css"
       media="only screen and (max-width: 640px)">
+    <script src="js/jquery.js"></script>
+
+    <script src="js/jquery.photoset-grid.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
+    <link rel="stylesheet" href="colorbox.css">
+
     <title>Final Website</title>
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -31,12 +37,17 @@
     <main>
       <section id="sect1">
         <h2>Gallery</h2>
-        <div id="grid3">
-          <img src="images/photo1.jpg" class="gallery" alt="drone shot 1">
-          <img src="images/photo2.jpg" class="gallery" alt="drone shot 2">
-          <img src="images/photo3.jpg" class="gallery" alt="drone shot 3">
-          <img src="images/photo4.jpg" class="gallery" alt="drone shot 4">
-        </div>
+        <!-- <div id="grid3"> -->
+          <div class="photoset-grid-lightbox" data-layout="223" style="visibility: hidden;">
+            <img src="images/gallery1.jpg" class="gallery" alt="couple photo 1">
+            <img src="images/gallery2.jpg" class="gallery" alt="couple photo 2">
+            <img src="images/gallery3.jpg" class="gallery" alt="couple photo 3">
+            <img src="images/gallery4.jpg" class="gallery" alt="couple photo 4">
+            <img src="images/gallery5.jpg" class="gallery" alt="couple photo 5">
+            <img src="images/gallery6.jpg" class="gallery" alt="couple photo 6">
+            <img src="images/gallery7.jpg" class="gallery" alt="couple photo 7">
+          </div>
+        <!-- </div> -->
       </section>
     </main>
 
@@ -45,5 +56,38 @@
       <br>
       <a href="#top">Back to top</a>
     </footer>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      //Jquery code
+      $('.photoset-grid-lightbox').photosetGrid({
+        highresLinks: true,
+        rel: 'couple-gallery',
+        gutter: '2px',
+
+        onComplete: function(){
+          $('.photoset-grid-lightbox').attr('style', '');
+          $('.photoset-grid-lightbox a').colorbox({
+            photo: true,
+            scalePhotos: true,
+            maxHeight:'90%',
+            maxWidth:'90%'
+          });
+        }
+      });
+      //End of jquery code
+      });
+    </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42872691-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-42872691-2');
+    </script>
+
   </body>
 </html>

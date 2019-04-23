@@ -3,6 +3,7 @@
 
 body{
   background-color: #070D0B;
+  background-image: url('https://previews.123rf.com/images/msmoloko/msmoloko1703/msmoloko170300041/73213755-dark-tropical-background-with-jungle-plants-seamless-tropical-pattern-with-green-phoenix-palm-leaves.jpg');
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
@@ -95,7 +96,7 @@ section{
 #grid4{
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 10px;
 }
 

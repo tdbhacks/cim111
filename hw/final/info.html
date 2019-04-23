@@ -11,6 +11,7 @@
       media="only screen and (min-width: 640px) and (max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/mobile.css"
       media="only screen and (max-width: 640px)">
+    <script src="js/jquery.js"></script>
     <title>Final Website</title>
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -33,26 +34,21 @@
         <h2>Info</h2>
         <div id="grid2">
           <section>
-            <b>Camera features</b><br>
-            Sensor	1/2.3” CMOS <br>
-            Effective Pixels: 12 MP <br>
-            Lens	FOV: 85° <br>
-            Aperture: f/2.8 <br>
-            Electronic Shutter: 8 - 1/8000s <br>
-            Still Image Size: <br>
-            <i>4:3: 4056×3040</i> <br>
-            <i>16:9: 4056×2280</i>
+            <b>Useful Information:</b><br>
+            <p>*info here*</p>
           </section>
           <section>
-            <b>Drone features</b><br>
-            Takeoff Weight	430 g <br>
-            Dimensions	Folded: <br>
-            <i>168×83×49 mm (L×W×H)</i> <br>
-            Unfolded: <br>
-            <i>168×184×64 mm (L×W×H)</i> <br>
-            Max Speed (no wind):	68.4 kph <br>
-            Max Service Ceiling Above Sea Level	5000 m <br>
-            Max Flight Time (no wind):	21 minutes
+            <b>Location of the event:</b><br><br>
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600"
+                height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=miami&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+              <style>
+                .mapouter{position:relative;text-align:right;height:500px;width:600px;}
+                .gmap_canvas{overflow:hidden;background:none!important;height:500px;width:600px;}
+              </style>
+            </div>
           </section>
         </div>
       </section>
@@ -63,5 +59,16 @@
       <br>
       <a href="#top">Back to top</a>
     </footer>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42872691-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-42872691-2');
+    </script>
+
   </body>
 </html>
