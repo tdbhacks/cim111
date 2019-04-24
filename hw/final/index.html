@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/mobile.css"
       media="only screen and (max-width: 640px)">
     <script src="js/jquery.js"></script>
+
+    <script src="js/jquery.countdown.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+
     <title>Final Website</title>
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -20,7 +24,7 @@
       <h1 id="top">Alexandra and Dominic</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="story.html">Our Story</a></li>
           <li><a href="info.html">Info</a></li>
@@ -30,17 +34,57 @@
     </header>
 
     <main>
-      <div id="counter">
-        <iframe src="https://www.arewethere.yt/Big-Day-Countdown/100612.htm?type=embed"
-          width="600" height="300" frameborder="0"></iframe>
-      </div>
+      <br><p id="disclaimer"><b>This counter does not support 3 digits, check
+        below for the actual number of days left!</b><p><br>
+      <div id="countdown"></div>
+		  <p id="note"></p>
+
     </main>
 
     <footer>
-      Website developed by <a href="https://www.instagram.com/tdbhacks" id="instagram">@tdbhacks</a>
+      Website developed by <a href="https://www.instagram.com/tdbhacks" id="credit">@tdbhacks</a>
       <br>
+
+      Background vector created by rawpixel.com -
+      <a id="credit" href="https://www.freepik.com/free-photos-vectors/background">
+        www.freepik.com</a><br>
+
       <a href="#top">Back to top</a>
     </footer>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+      //Jquery code
+        var note = $('#note'),
+        ts = new Date(2019, 11, 16);
+        // newYear = true;
+        //
+        // if((new Date()) > ts){
+        //     // The new year is here! Count towards something else.
+        //     // Notice the *1000 at the end - time must be in milliseconds
+        //     ts = (new Date()).getTime() + 10*24*60*60*1000;
+        //     newYear = false;
+        // }
+
+        $('#countdown').countdown({
+            timestamp   : ts,
+            callback    : function(days, hours, minutes, seconds){
+
+                var message = "";
+
+                message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+                message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+                message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
+                message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+
+                message += "left until the big day!";
+
+                note.html(message);
+            }
+        });
+      //End of jquery code
+      });
+    </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42872691-2"></script>

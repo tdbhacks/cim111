@@ -25,7 +25,7 @@
       <h1 id="top">Alexandra and Dominic</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="story.html">Our Story</a></li>
           <li><a href="info.html">Info</a></li>
@@ -37,7 +37,6 @@
     <main>
       <section id="sect1">
         <h2>Gallery</h2>
-        <!-- <div id="grid3"> -->
           <div class="photoset-grid-lightbox" data-layout="223" style="visibility: hidden;">
             <img src="images/gallery1.jpg" class="gallery" alt="couple photo 1">
             <img src="images/gallery2.jpg" class="gallery" alt="couple photo 2">
@@ -47,13 +46,17 @@
             <img src="images/gallery6.jpg" class="gallery" alt="couple photo 6">
             <img src="images/gallery7.jpg" class="gallery" alt="couple photo 7">
           </div>
-        <!-- </div> -->
       </section>
     </main>
 
     <footer>
-      Website developed by <a href="https://www.instagram.com/tdbhacks" id="instagram">@tdbhacks</a>
+      Website developed by <a href="https://www.instagram.com/tdbhacks" id="credit">@tdbhacks</a>
       <br>
+
+      Background vector created by rawpixel.com -
+      <a id="credit" href="https://www.freepik.com/free-photos-vectors/background">
+        www.freepik.com</a><br>
+
       <a href="#top">Back to top</a>
     </footer>
 
@@ -63,7 +66,7 @@
       $('.photoset-grid-lightbox').photosetGrid({
         highresLinks: true,
         rel: 'couple-gallery',
-        gutter: '2px',
+        gutter: '3px',
 
         onComplete: function(){
           $('.photoset-grid-lightbox').attr('style', '');
