@@ -153,6 +153,21 @@ section{
     padding-top: 56.25%;
 }
 
+.responsive-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.board-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.board-wrapper span {
+  overflow: hidden;
+  max-width: 100%!important;
+}
+
 .gallery{
   width: 100%;
   margin: 0 auto;
