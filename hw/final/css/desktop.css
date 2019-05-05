@@ -108,6 +108,7 @@ section{
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
+  font-size: 17px;
 }
 
 #sect1{
@@ -151,6 +152,10 @@ section{
   width: 75%;
   height: auto;
   margin: 0 auto;
+}
+
+#story_pic{
+  width: 70%;
 }
 
 .resp-iframe {
