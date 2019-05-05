@@ -25,19 +25,29 @@ nav ul li{
   display: block;
 }
 
-#grid1{
+/* #grid1{
   display: block;
-}
+} */
 
 #grid2{
   display: block;
 }
 
-#grid3{
+/* #grid3{
   display: block;
   margin-bottom: 15px;
-}
+} */
 
 #grid4{
 display: block;
+}
+
+#sect2{
+  width:90%;
+}
+
+#welcome_message{
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
